@@ -9,7 +9,57 @@
   <body>
     <header>
       <h1>Online LIBRARY</h1>
+      <button id="open-modal" class="new-book">NEW BOOK</button>
     </header>
+
+    <main>
+      <dialog id="modal">
+        <form action="#">
+          <div>
+            <label for="title">Title</label>
+            <input
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Harry Potter"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div>
+            <label for="author">Author</label>
+            <input
+              type="text"
+              name="author"
+              id="author"
+              placeholder="J. K. Rowling"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div>
+            <label for="pages">Pages</label>
+            <input
+              type="number"
+              name="pages"
+              id="pages"
+              placeholder="223"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div style="display: flex">
+            <label for="read">Read?</label>
+            <input type="checkbox" name="read" id="read" />
+          </div>
+          <button class="add-book" type="submit">Add Book</button>
+          <button id="close-modal" class="close-modal">Close</button>
+        </form>
+      </dialog>
+
+      <section id="books" class="books"></section>
+    </main>
+    <script src="/src/js/modal.js"></script>
     <script src="/src/js/index.js"></script>
   </body>
 </html>

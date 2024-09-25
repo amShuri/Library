@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #363636;
+  color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+}
+
+header .new-book {
+  cursor: pointer;
+  background-color: #888;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 3px;
+}
+
+header .new-book:hover {
+  background-color: #666;
+}
+
+dialog {
+  border: 1px solid #acacac;
+  border-radius: 4px;
+  padding: 2rem;
+}
+
+dialog .add-book,
+dialog .close-modal {
+  cursor: pointer;
+  border: 0;
+  color: #fff;
+  border-radius: 4px;
+}
+
+dialog .add-book {
+  background-color: rgb(97, 179, 255);
+}
+
+dialog .add-book:hover {
+  background-color: rgb(59, 133, 202);
+}
+
+dialog .close-modal {
+  background-color: rgba(250, 90, 90, 0.692);
+}
+
+dialog .close-modal:hover {
+  background-color: rgba(184, 38, 38, 0.692);
+}
+
+form label {
+  color: #666;
+  display: block;
+  font-weight: bold;
+}
+
+form input {
+  margin-bottom: 12px;
+  padding: 4px;
+}
+
+form button {
+  padding: 8px 12px;
+}
+
+.books {
+  display :flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.book-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.book-card h3 {
+  font-size: 1em;
+  margin: 0;
+}
+
+.book-card p {
+  margin: 5px 0;
+  color: #666;
+}
