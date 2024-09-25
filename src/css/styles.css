@@ -47,19 +47,23 @@ dialog .close-modal {
   border-radius: 4px;
 }
 
-dialog .add-book {
+dialog .add-book,
+.book-card button.edit {
   background-color: rgb(97, 179, 255);
 }
 
-dialog .add-book:hover {
+dialog .add-book:hover,
+.book-card button.edit:hover {
   background-color: rgb(59, 133, 202);
 }
 
-dialog .close-modal {
+dialog .close-modal,
+.book-card button.delete {
   background-color: rgba(250, 90, 90, 0.692);
 }
 
-dialog .close-modal:hover {
+dialog .close-modal:hover,
+.book-card button.delete:hover {
   background-color: rgba(184, 38, 38, 0.692);
 }
 
@@ -87,16 +91,16 @@ form button {
 }
 
 .book-card {
-border-radius: 5px;
+  border-radius: 5px;
   border: 1px solid #ccc;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-display: flex;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 10px;
   padding: 15px;
   width: 280px;
-word-break: break-all;
+  word-break: break-all;
 }
 
 .book-card h3 {
@@ -107,4 +111,18 @@ word-break: break-all;
 .book-card p {
   margin: 5px 0;
   color: #666;
+}
+
+.book-card .actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.book-card button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #fff;
 }
