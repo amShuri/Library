@@ -60,6 +60,7 @@ document.querySelector("#books").addEventListener("click", (e) => {
   const bookId = bookCard.dataset.bookId;
   if (e.target.classList.contains("delete")) {
     myLibrary.splice(bookId, 1);
+    createBookCards();
   } else if (e.target.classList.contains("edit")) {
     const book = myLibrary[bookId];
 
