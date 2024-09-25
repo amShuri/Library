@@ -87,12 +87,16 @@ form button {
 }
 
 .book-card {
+border-radius: 5px;
   border: 1px solid #ccc;
-  padding: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 10px;
-  border-radius: 5px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  padding: 15px;
+  width: 280px;
+word-break: break-all;
 }
 
 .book-card h3 {
